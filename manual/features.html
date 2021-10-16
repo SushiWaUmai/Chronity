@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Features | Chronity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Features | Chronity ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="features-">Features ✨</h2>
+
+<p><strong>Make a timer repeat by setting <code>isLooped</code> to true.</strong></p>
+<pre><code class="lang-c#">// Log &quot;Hello World&quot; every 10 seconds.
+
+Timer.Register(10f, () =&gt; Debug.Log(&quot;Hello World&quot;), isLooped: true);
+</code></pre>
+<p><strong>Cancel a timer after calling it.</strong></p>
+<pre><code class="lang-c#">private Timer timer;
+
+private void Start()
+{
+    timer = Timer.Register(2f, () =&gt; Debug.Log(&quot;You won't see this text if you press X.&quot;));
+}
+
+private void Update()
+{
+    if (Input.GetKeyDown(KeyCode.X)) 
+    {
+        Timer.Cancel(timer);
+    }
+}
+</code></pre>
+<p><strong>Attach the timer to a MonoBehaviour so that the timer is destroyed when the MonoBehaviour is.</strong></p>
+<p>Very often, a timer called from a MonoBehaviour will manipulate that behaviour's state. Thus, it is common practice to cancel the timer in the OnDestroy method of the MonoBehaviour. We've added a convenient extension method that attaches a Timer to a MonoBehaviour such that it will automatically cancel the timer when the MonoBehaviour is detected as null.</p>
+<pre><code class="lang-c#">public class CoolMonoBehaviour : MonoBehaviour
+{
+    private void Start() 
+    {
+        // Use the AttachTimer extension method to create a timer that is destroyed when this
+        // object is destroyed.
+        this.RegisterTimer(5f, () =&gt; {
+      
+            // If this code runs after the object is destroyed, a null reference will be thrown,
+            // which could corrupt game state.
+            this.gameObject.transform.position = Vector3.zero;
+        });
+    }
+   
+    private void Update() 
+    {
+        // This code could destroy the object at any time!
+        if (Input.GetKeyDown(KeyCode.X)) 
+        {
+            GameObject.Destroy(this.gameObject);
+        }
+    }
+}
+</code></pre>
+<p><strong>Update a value gradually over time using the <code>onUpdate</code> callback.</strong></p>
+<pre><code class="lang-c#">// Change a color from white to red over the course of five seconds.
+Color color = Color.white;
+float transitionDuration = 5f;
+
+Timer.Register(transitionDuration,
+   onUpdate: secondsElapsed =&gt; color.r = 255 * (secondsElapsed / transitionDuration),
+   onComplete: () =&gt; Debug.Log(&quot;Color is now red&quot;));
+</code></pre>
+<p><strong>Make a timer run in the editor by using the <code>EditorTimer</code> class.</strong></p>
+<pre><code class="lang-c#">// Logs &quot;Hello World&quot; after 5 seconds in the editor
+
+EditorTimer.Register(5, () =&gt; Debug.Log(&quot;Hello World&quot;));
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/SushiWaUmai/Chronity/blob/main/docfx_project/manual/features.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Chronity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
