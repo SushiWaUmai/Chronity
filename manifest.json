@@ -1,6 +1,6 @@
 {
   "sitemap": {
-    "baseUrl": "https://sushiwaumai.github.io/chronity/"
+    "baseUrl": "https://sushiwaumai.github.io/Chronity/"
   },
   "homepages": [],
   "source_base_path": "/github/workspace/docfx_project",
@@ -16,12 +16,96 @@
       "is_incremental": false
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Chronity.EditorTimer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Chronity.EditorTimer.html",
+          "hash": "EPVOblSO7A99uCGceU7BMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Chronity.Timer.TimerManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Chronity.Timer.TimerManager.html",
+          "hash": "shBVv5g06A8r8XCiXW5blw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Chronity.Timer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Chronity.Timer.html",
+          "hash": "yZli2jY9FTKiW3T+3/GlFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Chronity.TimerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Chronity.TimerBase.html",
+          "hash": "wchlD9fs5Nyn3pvNpdOAZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Chronity.TimerExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Chronity.TimerExtension.html",
+          "hash": "PA2fjDxqOpczme0/HfjLvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Chronity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Chronity.html",
+          "hash": "QNnoG2L5H6TwEdF/PL/NuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "P6Y5d+5ysXudXXQynKhtWQ=="
+          "hash": "hIvl5QLeqkt79TbOA3XTRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "RQdIBfiCARD+FMAw+P9njw=="
         }
       },
       "is_incremental": false,
@@ -81,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "UosrkcmkLSijiMnp37ii+A=="
+          "hash": "6Za/9/gVhzODe+NfE2CgPw=="
         }
       },
       "is_incremental": false,
@@ -103,6 +187,12 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

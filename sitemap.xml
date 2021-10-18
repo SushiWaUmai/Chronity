@@ -1,26 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sushiwaumai.github.io/chronity/api/index.html</loc>
-    <lastmod>2021-10-16T09:09:38+00:00</lastmod>
+    <loc>https://sushiwaumai.github.io/Chronity/api/Chronity.EditorTimer.html</loc>
+    <lastmod>2021-10-18T10:09:26+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://sushiwaumai.github.io/chronity/index.html</loc>
-    <lastmod>2021-10-16T09:09:38+00:00</lastmod>
+    <loc>https://sushiwaumai.github.io/Chronity/api/Chronity.Timer.TimerManager.html</loc>
+    <lastmod>2021-10-18T10:09:26+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://sushiwaumai.github.io/chronity/manual/features.html</loc>
-    <lastmod>2021-10-16T09:09:38+00:00</lastmod>
+    <loc>https://sushiwaumai.github.io/Chronity/api/Chronity.Timer.html</loc>
+    <lastmod>2021-10-18T10:09:26+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://sushiwaumai.github.io/chronity/manual/getting-started.html</loc>
-    <lastmod>2021-10-16T09:09:38+00:00</lastmod>
+    <loc>https://sushiwaumai.github.io/Chronity/api/Chronity.TimerBase.html</loc>
+    <lastmod>2021-10-18T10:09:26+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sushiwaumai.github.io/Chronity/api/Chronity.TimerExtension.html</loc>
+    <lastmod>2021-10-18T10:09:26+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sushiwaumai.github.io/Chronity/api/Chronity.html</loc>
+    <lastmod>2021-10-18T10:09:26+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sushiwaumai.github.io/Chronity/api/index.html</loc>
+    <lastmod>2021-10-18T10:09:26+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sushiwaumai.github.io/Chronity/index.html</loc>
+    <lastmod>2021-10-18T10:09:26+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sushiwaumai.github.io/Chronity/manual/features.html</loc>
+    <lastmod>2021-10-18T10:09:26+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sushiwaumai.github.io/Chronity/manual/getting-started.html</loc>
+    <lastmod>2021-10-18T10:09:26+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

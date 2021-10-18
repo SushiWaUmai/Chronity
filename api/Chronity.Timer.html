@@ -1,0 +1,599 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Timer
+   | Chronity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Timer
+   | Chronity ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Chronity.Timer">
+  
+  
+  <h1 id="Chronity_Timer" data-uid="Chronity.Timer" class="text-break">Class Timer
+  </h1>
+  <div class="markdown level0 summary"><p>Allows you to run events <strong>during runtime</strong> on a delay without the use of <see cref="!:Coroutine"></see>
+or <see cref="!:MonoBehaviour"></see>.</p>
+<p>To create and start a Timer, use the <a class="xref" href="Chronity.Timer.html#Chronity_Timer_Register_System_Single_System_Action_System_Action_System_Single__System_Boolean_System_Boolean_System_Boolean_MonoBehaviour_">Register(Single, Action, Action&lt;Single&gt;, Boolean, Boolean, Boolean, MonoBehaviour)</a> method.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Chronity.TimerBase.html">TimerBase</a></div>
+    <div class="level2"><span class="xref">Timer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_Pause">TimerBase.Pause()</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_Resume">TimerBase.Resume()</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_Cancel">TimerBase.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_IsCanceled">TimerBase.IsCanceled</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_IsCompleted">TimerBase.IsCompleted</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_Duration">TimerBase.Duration</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_IsLooped">TimerBase.IsLooped</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_IsPaused">TimerBase.IsPaused</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_TimeElapsed">TimerBase.TimeElapsed</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_TimeRemaining">TimerBase.TimeRemaining</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_RatioComplete">TimerBase.RatioComplete</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_RatioRemaining">TimerBase.RatioRemaining</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_Update">TimerBase.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_HandlePause">TimerBase.HandlePause()</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_CheckTime">TimerBase.CheckTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_HandleUpdate">TimerBase.HandleUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_TimeDelta">TimerBase.TimeDelta</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase__onComplete">TimerBase._onComplete</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase__onUpdate">TimerBase._onUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase__startTime">TimerBase._startTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase__lastTime">TimerBase._lastTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase__endTime">TimerBase._endTime</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Chronity.html">Chronity</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Chronity_Timer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Timer : TimerBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Chronity_Timer__ctor_" data-uid="Chronity.Timer.#ctor*"></a>
+  <h4 id="Chronity_Timer__ctor_System_Single_System_Action_System_Action_System_Single__System_Boolean_System_Boolean_System_Boolean_MonoBehaviour_" data-uid="Chronity.Timer.#ctor(System.Single,System.Action,System.Action{System.Single},System.Boolean,System.Boolean,System.Boolean,MonoBehaviour)">Timer(Single, Action, Action&lt;Single&gt;, Boolean, Boolean, Boolean, MonoBehaviour)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Timer(float duration, Action onComplete, Action&lt;float&gt; onUpdate, bool usesRealTime = false, bool isLooped = false, bool cancelOnSceneChange = true, MonoBehaviour attachedBehavior = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">onComplete</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">onUpdate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usesRealTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isLooped</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cancelOnSceneChange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">MonoBehaviour</span></td>
+        <td><span class="parametername">attachedBehavior</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Chronity_Timer__hasAttachedBehavior" data-uid="Chronity.Timer._hasAttachedBehavior">_hasAttachedBehavior</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly bool _hasAttachedBehavior</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Chronity_Timer_AttachedBehavior_" data-uid="Chronity.Timer.AttachedBehavior*"></a>
+  <h4 id="Chronity_Timer_AttachedBehavior" data-uid="Chronity.Timer.AttachedBehavior">AttachedBehavior</h4>
+  <div class="markdown level1 summary"><p>The <see cref="!:MonoBehaviour"></see> the timer is attached to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MonoBehaviour AttachedBehavior { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MonoBehaviour</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Chronity_Timer_AttachedBehaviorDestroyed_" data-uid="Chronity.Timer.AttachedBehaviorDestroyed*"></a>
+  <h4 id="Chronity_Timer_AttachedBehaviorDestroyed" data-uid="Chronity.Timer.AttachedBehaviorDestroyed">AttachedBehaviorDestroyed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AttachedBehaviorDestroyed
+{
+}</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Chronity_Timer_CancelOnSceneChange_" data-uid="Chronity.Timer.CancelOnSceneChange*"></a>
+  <h4 id="Chronity_Timer_CancelOnSceneChange" data-uid="Chronity.Timer.CancelOnSceneChange">CancelOnSceneChange</h4>
+  <div class="markdown level1 summary"><p>Whether the timer should be destroyed when scene changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CancelOnSceneChange { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Chronity_Timer_CurrentTime_" data-uid="Chronity.Timer.CurrentTime*"></a>
+  <h4 id="Chronity_Timer_CurrentTime" data-uid="Chronity.Timer.CurrentTime">CurrentTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override float CurrentTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_CurrentTime">TimerBase.CurrentTime</a></div>
+  
+  
+  <a id="Chronity_Timer_IsDone_" data-uid="Chronity.Timer.IsDone*"></a>
+  <h4 id="Chronity_Timer_IsDone" data-uid="Chronity.Timer.IsDone">IsDone</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsDone { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Chronity.TimerBase.html#Chronity_TimerBase_IsDone">TimerBase.IsDone</a></div>
+  
+  
+  <a id="Chronity_Timer_UsesRealTime_" data-uid="Chronity.Timer.UsesRealTime*"></a>
+  <h4 id="Chronity_Timer_UsesRealTime" data-uid="Chronity.Timer.UsesRealTime">UsesRealTime</h4>
+  <div class="markdown level1 summary"><p>Whether the timer uses real-time or game-time. Real time is unaffected by changes to <see cref="!:Time.timeScale"></see>
+of the game (e.g. pausing, slow-mo), while game time is affected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsesRealTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Chronity_Timer_CancelAllTimers_" data-uid="Chronity.Timer.CancelAllTimers*"></a>
+  <h4 id="Chronity_Timer_CancelAllTimers" data-uid="Chronity.Timer.CancelAllTimers">CancelAllTimers()</h4>
+  <div class="markdown level1 summary"><p>Cancels all created timers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CancelAllTimers()</code></pre>
+  </div>
+  
+  
+  <a id="Chronity_Timer_PauseAllTimers_" data-uid="Chronity.Timer.PauseAllTimers*"></a>
+  <h4 id="Chronity_Timer_PauseAllTimers" data-uid="Chronity.Timer.PauseAllTimers">PauseAllTimers()</h4>
+  <div class="markdown level1 summary"><p>Pauses all created timers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PauseAllTimers()</code></pre>
+  </div>
+  
+  
+  <a id="Chronity_Timer_Register_" data-uid="Chronity.Timer.Register*"></a>
+  <h4 id="Chronity_Timer_Register_System_Single_System_Action_System_Action_System_Single__System_Boolean_System_Boolean_System_Boolean_MonoBehaviour_" data-uid="Chronity.Timer.Register(System.Single,System.Action,System.Action{System.Single},System.Boolean,System.Boolean,System.Boolean,MonoBehaviour)">Register(Single, Action, Action&lt;Single&gt;, Boolean, Boolean, Boolean, MonoBehaviour)</h4>
+  <div class="markdown level1 summary"><p>Register a new timer that should fire an event after a certain amount of time
+has elapsed.</p>
+<p>Registered timers are destroyed when the scene changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Timer Register(float duration, Action onComplete, Action&lt;float&gt; onUpdate = null, bool useRealTime = false, bool isLooped = false, bool cancelOnSceneChange = true, MonoBehaviour attachedBehavior = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>The time to wait before the timer should fire, in seconds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">onComplete</span></td>
+        <td><p>An action to fire when the timer completes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">onUpdate</span></td>
+        <td><p>An action that should fire each time the timer is updated. Takes the amount
+of time passed in seconds since the start of the timer's current loop.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useRealTime</span></td>
+        <td><p>Whether the timer uses real-time(i.e. not affected by pauses,
+slow/fast motion) or game-time(will be affected by pauses and slow/fast-motion).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isLooped</span></td>
+        <td><p>Whether the timer should repeat after executing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cancelOnSceneChange</span></td>
+        <td><p>Whether the timer should cancel when the scene changes</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">MonoBehaviour</span></td>
+        <td><span class="parametername">attachedBehavior</span></td>
+        <td><p>An object to attach this timer to. After the object is destroyed,
+the timer will expire and not execute. This allows you to avoid annoying <span class="xref">System.NullReferenceException</span>s
+by preventing the timer from running and accessessing its parents' components
+after the parent has been destroyed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Chronity.Timer.html">Timer</a></td>
+        <td><p>A timer object that allows you to examine stats and stop/resume progress.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Chronity_Timer_ResumeAllTimers_" data-uid="Chronity.Timer.ResumeAllTimers*"></a>
+  <h4 id="Chronity_Timer_ResumeAllTimers" data-uid="Chronity.Timer.ResumeAllTimers">ResumeAllTimers()</h4>
+  <div class="markdown level1 summary"><p>Resumes all created timers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResumeAllTimers()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Chronity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
