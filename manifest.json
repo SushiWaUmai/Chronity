@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Chronity.EditorTimer.html",
-          "hash": "EPVOblSO7A99uCGceU7BMA=="
+          "hash": "PHbimPzVs6V0gqaEJIDGjA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Chronity.Timer.TimerManager.html",
-          "hash": "shBVv5g06A8r8XCiXW5blw=="
+          "hash": "1KKuWwA4/TtOxjFGGI9Mtw=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Chronity.TimerExtension.html",
-          "hash": "PA2fjDxqOpczme0/HfjLvA=="
+          "hash": "5YX2e5l1HihXKgB3vIMbHA=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/features.html",
-          "hash": "qhwIKLMS35c43TuryUg9+w=="
+          "hash": "YDs3sBLbyE268/mr4/Sujg=="
         }
       },
       "is_incremental": false,

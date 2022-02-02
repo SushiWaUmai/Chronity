@@ -108,7 +108,7 @@ private void Update()
     {
         // Use the AttachTimer extension method to create a timer that is destroyed when this
         // object is destroyed.
-        this.RegisterTimer(5f, () =&gt; {
+        this.AttachTimer(5f, () =&gt; {
       
             // If this code runs after the object is destroyed, a null reference will be thrown,
             // which could corrupt game state.
@@ -134,6 +134,14 @@ float transitionDuration = 5f;
 Timer.Register(transitionDuration,
    onUpdate: secondsElapsed =&gt; color.r = 255 * (secondsElapsed / transitionDuration),
    onComplete: () =&gt; Debug.Log(&quot;Color is now red&quot;));
+</code></pre>
+<p><strong>Make a timer presist through scene changes using the <code>cancelOnSceneChange</code> parameter.</strong></p>
+<pre><code class="lang-c#">// Make a timer that will persist through scene changes.
+Timer.Register(5f, () =&gt; Debug.Log(&quot;Hello World&quot;), cancelOnSceneChange: false);
+
+// Change scene from another script 
+
+// Logs &quot;Hello World&quot; after 5 seconds.
 </code></pre>
 <p><strong>Make a timer run in the editor by using the <code>EditorTimer</code> class.</strong></p>
 <pre><code class="lang-c#">// Logs &quot;Hello World&quot; after 5 seconds in the editor

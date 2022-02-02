@@ -776,19 +776,19 @@ references:
   commentId: T:Chronity.TimerExtension
   fullName: Chronity.TimerExtension
   nameWithType: TimerExtension
-- uid: Chronity.TimerExtension.RegisterTimer(MonoBehaviour,System.Single,System.Action,System.Action{System.Single},System.Boolean,System.Boolean,System.Boolean)
-  name: RegisterTimer(MonoBehaviour, Single, Action, Action<Single>, Boolean, Boolean, Boolean)
-  href: api/Chronity.TimerExtension.html#Chronity_TimerExtension_RegisterTimer_MonoBehaviour_System_Single_System_Action_System_Action_System_Single__System_Boolean_System_Boolean_System_Boolean_
-  commentId: M:Chronity.TimerExtension.RegisterTimer(MonoBehaviour,System.Single,System.Action,System.Action{System.Single},System.Boolean,System.Boolean,System.Boolean)
-  name.vb: RegisterTimer(MonoBehaviour, Single, Action, Action(Of Single), Boolean, Boolean, Boolean)
-  fullName: Chronity.TimerExtension.RegisterTimer(MonoBehaviour, System.Single, System.Action, System.Action<System.Single>, System.Boolean, System.Boolean, System.Boolean)
-  fullName.vb: Chronity.TimerExtension.RegisterTimer(MonoBehaviour, System.Single, System.Action, System.Action(Of System.Single), System.Boolean, System.Boolean, System.Boolean)
-  nameWithType: TimerExtension.RegisterTimer(MonoBehaviour, Single, Action, Action<Single>, Boolean, Boolean, Boolean)
-  nameWithType.vb: TimerExtension.RegisterTimer(MonoBehaviour, Single, Action, Action(Of Single), Boolean, Boolean, Boolean)
-- uid: Chronity.TimerExtension.RegisterTimer*
-  name: RegisterTimer
-  href: api/Chronity.TimerExtension.html#Chronity_TimerExtension_RegisterTimer_
-  commentId: Overload:Chronity.TimerExtension.RegisterTimer
+- uid: Chronity.TimerExtension.AttachTimer(MonoBehaviour,System.Single,System.Action,System.Action{System.Single},System.Boolean,System.Boolean,System.Boolean)
+  name: AttachTimer(MonoBehaviour, Single, Action, Action<Single>, Boolean, Boolean, Boolean)
+  href: api/Chronity.TimerExtension.html#Chronity_TimerExtension_AttachTimer_MonoBehaviour_System_Single_System_Action_System_Action_System_Single__System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:Chronity.TimerExtension.AttachTimer(MonoBehaviour,System.Single,System.Action,System.Action{System.Single},System.Boolean,System.Boolean,System.Boolean)
+  name.vb: AttachTimer(MonoBehaviour, Single, Action, Action(Of Single), Boolean, Boolean, Boolean)
+  fullName: Chronity.TimerExtension.AttachTimer(MonoBehaviour, System.Single, System.Action, System.Action<System.Single>, System.Boolean, System.Boolean, System.Boolean)
+  fullName.vb: Chronity.TimerExtension.AttachTimer(MonoBehaviour, System.Single, System.Action, System.Action(Of System.Single), System.Boolean, System.Boolean, System.Boolean)
+  nameWithType: TimerExtension.AttachTimer(MonoBehaviour, Single, Action, Action<Single>, Boolean, Boolean, Boolean)
+  nameWithType.vb: TimerExtension.AttachTimer(MonoBehaviour, Single, Action, Action(Of Single), Boolean, Boolean, Boolean)
+- uid: Chronity.TimerExtension.AttachTimer*
+  name: AttachTimer
+  href: api/Chronity.TimerExtension.html#Chronity_TimerExtension_AttachTimer_
+  commentId: Overload:Chronity.TimerExtension.AttachTimer
   isSpec: "True"
-  fullName: Chronity.TimerExtension.RegisterTimer
-  nameWithType: TimerExtension.RegisterTimer
+  fullName: Chronity.TimerExtension.AttachTimer
+  nameWithType: TimerExtension.AttachTimer
